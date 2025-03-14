@@ -57,7 +57,7 @@ Vercel → Hosting platform optimized for Next.js applications, used for deployi
 1️⃣ Installation
 Clone the repository and install dependencies:
 
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/Doctorzik/weather.git
 cd your-project
 npm install
 2️⃣ Run the Project

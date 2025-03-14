@@ -8,9 +8,13 @@ import { useQuery } from "@tanstack/react-query";
 
 
 export default function Home() {
+  // on inital Load the states will be set. with react useState Hook
   const [location, setLocation] = useState<string | null>(null);
   const [userCoords, setUserCoords] = useState<{ lat: number; lon: number } | null>(null);
 
+
+  //  this will run when the user input a location in the input
+  // useQuery will fetch the data using the user entered Location.
   const { data: coordinates } = useQuery<{ lat: number; lon: number }, Error>({
     queryKey: ["location", location],
     queryFn: () => getWeatherLocation(location!),
